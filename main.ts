@@ -7,9 +7,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-// v1: the vacuum treats the missed spot as a structural feature.
+// v2: revised — the vacuum does not miss the spot, it hires it.
+// Stronger turn (interviewed / references / hired as a rug) and a
+// tighter punch at the end ("It starts Monday").
 const LINE =
-  "I scanned the spot three times, classified it as load-bearing dust, and left it there. The house needs it more than you do.";
+  "I did not miss the spot. I interviewed it, checked its references, and hired it as a rug. It starts Monday.";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "out";
 mkdirSync(outDir, { recursive: true });
